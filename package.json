@@ -1,6 +1,6 @@
 {
   "name": "pnp-safe",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Information-theoretic cryptography for TypeScript: primitives whose security does not depend on P != NP.",
   "type": "module",
   "main": "dist/src/index.js",
