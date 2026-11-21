@@ -1,11 +1,13 @@
 # pnp-safe
 
+[![npm](https://img.shields.io/npm/v/pnp-safe)](https://www.npmjs.com/package/pnp-safe) [![License: Commercial](https://img.shields.io/badge/license-commercial%20(paid)-c0392b)](https://github.com/TheodoreAI/pnp-safe/blob/main/LICENSE)
+
 Cryptographic primitives for TypeScript whose security does not depend on any
 problem being hard to compute. If P = NP, AES, SHA-2, Argon2, RSA, elliptic
 curves and lattice schemes all fall in principle. These do not.
 
 > **License:** source-available, paid. Reading and a 30-day private evaluation
-> are free; everything else needs a license. See [LICENSE](LICENSE) and reach
+> are free; everything else needs a license. See [LICENSE](https://github.com/TheodoreAI/pnp-safe/blob/main/LICENSE) and reach
 > out at [mateoej12@gmail.com](mailto:mateoej12@gmail.com) or via
 > [github.com/TheodoreAI](https://github.com/TheodoreAI) to agree on a price.
 
@@ -97,3 +99,19 @@ independence bound each turn a finding from held to broken.
 npm install
 npm test
 ```
+
+## License
+
+pnp-safe Commercial License 1.0. Copyright (c) 2026 TheodoreAI.
+
+This package is source-available, not open source. Installing it from npm does
+not grant a license to use it.
+
+- **Free:** reading the code, and building and running it privately for up to
+  30 days to decide whether to buy a license.
+- **Paid:** any other use, including commercial, internal or production use,
+  modification, redistribution, and machine-learning training.
+
+To buy a license, email [mateoej12@gmail.com](mailto:mateoej12@gmail.com) or
+reach out via [github.com/TheodoreAI](https://github.com/TheodoreAI) to agree on
+a price. Full terms are in the [LICENSE](https://github.com/TheodoreAI/pnp-safe/blob/main/LICENSE) file.

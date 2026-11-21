@@ -31,7 +31,7 @@
     "p-vs-np"
   ],
   "author": "TheodoreAI (https://github.com/TheodoreAI)",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "LicenseRef-pnp-safe-Commercial-1.0",
   "engines": {
     "node": ">=20"
   },
