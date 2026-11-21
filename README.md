@@ -6,7 +6,8 @@ curves and lattice schemes all fall in principle. These do not.
 
 > **License:** source-available, paid. Reading and a 30-day private evaluation
 > are free; everything else needs a license. See [LICENSE](LICENSE) and reach
-> out via [github.com/TheodoreAI](https://github.com/TheodoreAI) to agree on a price.
+> out at [mateoej12@gmail.com](mailto:mateoej12@gmail.com) or via
+> [github.com/TheodoreAI](https://github.com/TheodoreAI) to agree on a price.
 
 ## What is inside
 
