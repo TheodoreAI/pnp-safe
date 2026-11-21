@@ -1,0 +1,43 @@
+pnp-safe Commercial License
+
+Copyright (c) 2026 TheodoreAI (https://github.com/TheodoreAI). All rights reserved.
+
+This software and its source code (the "Software") are made publicly visible
+for review only. The Software is NOT open source.
+
+1. Permitted without a paid license
+   You may view and read the source code, and you may download, build and run
+   the Software privately for the sole purpose of evaluating whether to buy a
+   license, for up to 30 days.
+
+2. Requires a paid license
+   Any other use requires a separate written license agreement with the
+   copyright holder and payment of the agreed fee. This includes, without
+   limitation:
+   a. use in any product, service, or internal system, commercial or not;
+   b. copying, modifying, or creating derivative works;
+   c. redistributing, sublicensing, publishing, or selling the Software or any
+      part of it, in source or compiled form;
+   d. use to train, fine-tune, or evaluate machine-learning models.
+
+3. Getting a license
+   Contact the copyright holder through https://github.com/TheodoreAI to agree
+   on a price and terms. No license is granted until both parties sign a
+   written agreement and the fee is paid.
+
+4. Contributions
+   Forking this repository on GitHub to submit a pull request is permitted.
+   By submitting a contribution you grant the copyright holder a perpetual,
+   irrevocable, royalty-free right to use, modify, and license it under any
+   terms, including this one.
+
+5. No warranty
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+   IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+   OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE. Cryptographic software
+   can fail in ways that cause serious loss; you use it at your own risk.
+
+6. Termination
+   Any use outside these terms ends all permissions under this license
+   automatically.
