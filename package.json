@@ -19,7 +19,8 @@
   "scripts": {
     "build": "tsc -p .",
     "test": "tsc -p . && node --test dist/test/pnp-safe.test.js",
-    "lab": "tsc -p . && node dist/examples/attack-lab/run.js"
+    "lab": "tsc -p . && node dist/examples/attack-lab/run.js",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "cryptography",
@@ -31,12 +32,19 @@
   ],
   "author": "TheodoreAI (https://github.com/TheodoreAI)",
   "license": "SEE LICENSE IN LICENSE",
-  "private": true,
   "engines": {
     "node": ">=20"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
     "typescript": "^7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheodoreAI/pnp-safe.git"
+  },
+  "homepage": "https://github.com/TheodoreAI/pnp-safe#readme",
+  "bugs": {
+    "url": "https://github.com/TheodoreAI/pnp-safe/issues"
   }
 }
