@@ -55,6 +55,42 @@ await hasher.verify("hunter2", record); // true
 6. Key distribution is out of scope: no public-key exchange survives P = NP.
 7. JavaScript bigint arithmetic is not constant time. Timing side channels are out of scope.
 
+## Attack lab
+
+`examples/attack-lab` runs an HTTP server with two vaults side by side. One uses
+RSA, AES-256-GCM, salted SHA-256 and HMAC tokens. The other uses pnp-safe. An
+attacker with a network tap, a stolen database and a stand-in P = NP oracle
+then attacks both.
+
+```sh
+npm run lab               # run once, print the report, exit 1 if any expectation fails
+npm run lab -- --serve    # same, then serve a dashboard at http://127.0.0.1:8787
+```
+
+No real P = NP solver exists, so the oracle uses exhaustive search on
+scaled-down classical keys: a 64-bit RSA modulus and an HMAC key with 20
+unknown bits. pnp-safe runs at full size. Its attacks go further than search:
+the attacker constructs every key that fits what it observed, and shows that
+contradictory answers fit equally well.
+
+| Vault | Attack | Result |
+| --- | --- | --- |
+| Legacy | Factor RSA, unwrap the AES key, read the message | Broken |
+| Legacy | Forge an RSA signature | Broken |
+| Legacy | Invert stolen SHA-256 password hashes, log in | Broken |
+| Legacy | Recover the HMAC key, mint an admin token | Broken |
+| pnp-safe | Search every pad key for the plaintext | Held: only the length leaks |
+| pnp-safe | Bit-flip an in-flight message and re-tag it (204 forgeries) | Held: 0 accepted |
+| pnp-safe | Replay a delivered message | Held |
+| pnp-safe | Forge far ahead to burn the receiver's pad | Held: the real message still arrives |
+| pnp-safe | Test password guesses against a stolen table | Held: any guesses fit some pepper |
+| pnp-safe | Solve a 3-of-5 Shamir secret from 2 shares | Held: every secret fits |
+| pnp-safe | Steal the pepper too (out of model) | Broken, as documented |
+
+Injected bugs are caught. Disabling MAC verification, disabling both the pad
+cursor check and byte wiping, or holding more records than the pepper's
+independence bound each turn a finding from held to broken.
+
 ## Development
 
 ```sh
